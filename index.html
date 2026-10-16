@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رحلة ابن بطوطة — تحفة النظار في غرائب الأمصار وعجائب الأسفار</title>
+  <meta name="description" content="تحفة النظار في غرائب الأمصار وعجائب الأسفار (رحلة ابن بطوطة): النص الكامل، مع بحث فوري وتلوين وتنقّل بالأبواب، يعمل دون اتصال.">
+  <meta name="theme-color" content="#1f5c46">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="رحلة ابن بطوطة">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="./style.css">
+  <script id="themeBoot">
+    (function () {
+      var t = 'light';
+      try {
+        t = localStorage.getItem('rihla_theme') ||
+          (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+      try {
+        var fs = localStorage.getItem('rihla_font');
+        if (fs) document.documentElement.style.setProperty('--content-font-size', fs + 'rem');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>🧭 رحلة ابن بطوطة</h1>
+      <p>تحفة النظار في غرائب الأمصار وعجائب الأسفار</p>
+    </div>
+    <button id="themeToggle" aria-label="تبديل الوضع النهاري/الليلي" title="تبديل الوضع النهاري/الليلي">🌙</button>
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <footer>
+    <p>🧭 <b>تحفة النظار في غرائب الأمصار وعجائب الأسفار</b> — رحلة ابن بطوطة، أملاها على محمد بن جزي الكلبي (ت 779هـ / 1377م). النص الكامل حسب طبعة دار الشرق العربي (المكتبة الشاملة، كتاب 12009).</p>
+    <p>هذا الموقع يعرض الكتاب كاملاً كما هو؛ لا يُضاف إليه نص غير موجود في المصدر.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+  <script data-app-sw="1">if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){})})}</script>
+  <script data-root-sw="1">if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}</script>
+</body>
+</html>

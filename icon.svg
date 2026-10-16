@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="رحلة ابن بطوطة">
+  <defs>
+    <radialGradient id="parch" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#fbf6ea"/>
+      <stop offset="100%" stop-color="#efe2c4"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="#1f5c46"/>
+  <circle cx="256" cy="256" r="170" fill="url(#parch)"/>
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#a9792f" stroke-width="12"/>
+  <circle cx="256" cy="256" r="152" fill="none" stroke="#d3a34a" stroke-width="2" opacity=".7"/>
+  <!-- diagonal (short) points -->
+  <g fill="#a9792f">
+    <polygon points="330,182 298,256 256,214"/>
+    <polygon points="330,330 256,298 298,256"/>
+    <polygon points="182,330 214,256 256,298"/>
+    <polygon points="182,182 256,214 214,256"/>
+  </g>
+  <!-- main cardinal points, two-tone -->
+  <polygon points="256,106 256,256 216,256" fill="#a9792f"/>
+  <polygon points="256,106 256,256 296,256" fill="#1f5c46"/>
+  <polygon points="406,256 256,256 256,296" fill="#a9792f"/>
+  <polygon points="406,256 256,256 256,216" fill="#1f5c46"/>
+  <polygon points="256,406 256,256 296,256" fill="#a9792f"/>
+  <polygon points="256,406 256,256 216,256" fill="#1f5c46"/>
+  <polygon points="106,256 256,256 256,216" fill="#a9792f"/>
+  <polygon points="106,256 256,256 256,296" fill="#1f5c46"/>
+  <circle cx="256" cy="256" r="17" fill="#f5eeda" stroke="#a9792f" stroke-width="5"/>
+</svg>
